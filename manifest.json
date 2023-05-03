@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Search Fixer",
+  "description": "Fix YouTube search results by showing all search results and stop Recommended videos from appearing in your search results.",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon.png",
+    "32": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "content_scripts": [
+    {
+      "css": ["style.css"],
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*",
+        "https://www.youtube.com/*",
+        "https://m.youtube.com/*"
+      ]
+    }
+  ]
+}
