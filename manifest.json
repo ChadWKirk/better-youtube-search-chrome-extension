@@ -7,6 +7,7 @@
     "service_worker": "scripts/background.js"
   },
   "permissions": ["tabs"],
+  "action": { "default_popup": "popup.html" },
   "icons": {
     "16": "images/icon.png",
     "32": "images/icon.png",
