@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="popup.css" />
     <title>Document</title>
   </head>
   <body>
     <div style="width: 200px; padding: 0rem 1rem 1rem 1rem">
       <h1 style="font-size: 1rem">YouTube Search Fixer</h1>
       <hr />
-      <label style="font-size: 1.15rem" for="checkbox">On/Off:</label
-      ><input
-        type="checkbox"
-        id="checkbox"
-        style="width: 1rem; height: 1rem; margin-left: 1rem"
-      />
+      <label class="on-off-container" style="font-size: 1.15rem" for="checkbox"
+        ><span style="cursor: pointer; user-select: none">On/Off:</span
+        ><label class="toggle-switch">
+          <input type="checkbox" id="checkbox" />
+          <span class="slider"></span></label
+      ></label>
     </div>
   </body>
 </html>
