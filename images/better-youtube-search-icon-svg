@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="128 128 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <ellipse style="fill: rgb(255, 0, 0);" cx="192" cy="192" rx="64" ry="64" bx:origin="-0.044516 0.5"/>
+  <path d="M 716.116 633.511 L 774.116 749.511 L 658.116 749.511 L 716.116 633.511 Z" style="fill: rgb(222, 1, 1);" transform="matrix(0, 1, -1, 0, 890.318726, -524.625061)" bx:shape="triangle 658.116 633.511 116 116 0.5 0 1@4ae425da" bx:origin="0 1"/>
+  <ellipse style="fill: rgb(255, 255, 255);" cx="203.986" cy="178.158" rx="24" ry="24"/>
+  <rect style="fill: rgb(255, 255, 255); stroke: rgb(255, 255, 255);" transform="matrix(0.71934, -0.694658, 0.694658, 0.71934, -51.983295, 164.665344)" x="111.465" y="180.621" width="32" height="12.8" rx="4" ry="4"/>
+  <ellipse style="fill: rgb(239, 0, 0);" cx="203.666" cy="178.153" rx="20.29" ry="20.29"/>
+  <path style="fill: rgb(255, 255, 255); stroke: rgb(255, 255, 255);" transform="matrix(0.71934, -0.694658, 0.694658, 0.71934, 41.14669, 172.509476)" d="M 73.666 112.888 H 89.666 V 120.888 H 73.666 A 4 4 0 0 1 69.666 116.888 V 116.888 A 4 4 0 0 1 73.666 112.888 Z" bx:shape="rect 69.666 112.888 20 8 4 0 0 4 1@2af0ec4c"/>
+  <ellipse style="stroke-linejoin: round; fill: none; stroke: rgb(255, 255, 255); stroke-width: 3px;" cx="203.494" cy="178.051" rx="16" ry="16"/>
+  <ellipse style="fill: rgb(239, 0, 0);" cx="201.678" cy="179.473" rx="16.497" ry="16.213"/>
+</svg>
