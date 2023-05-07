@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Search Fixer",
+  "name": "Better YouTube Search",
   "description": "Fix YouTube search results by showing all search results and stop Recommended videos from appearing in your search results.",
   "version": "1.0",
   "background": {
