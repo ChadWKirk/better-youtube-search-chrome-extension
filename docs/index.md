@@ -6,7 +6,7 @@ nav_order: 1
 
 # Big Picture Stuff
 
-Repo URL - [https://github.com/ChadWKirk/youtube-search-fixer-chrome-extension](https://github.com/ChadWKirk/youtube-search-fixer-chrome-extension)
+Repo URL - [https://github.com/ChadWKirk/better-youtube-search-chrome-extension](https://github.com/ChadWKirk/better-youtube-search-chrome-extension)
 
 Chrome Extension Install Link -
 
