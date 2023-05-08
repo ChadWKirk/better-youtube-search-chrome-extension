@@ -2,6 +2,19 @@
 //checkbox is 0 opacity so you can't see it, but it is represented by the toggle slider
 let checkbox = document.getElementById("checkbox");
 
+//off and on labels
+//so their color changes when checkbox is checked or not checked
+let offLabel = document.getElementsByClassName("off-label");
+let onLabel = document.getElementsByClassName("on-label");
+
+//slider and slider:before
+//to set their transition times to 0 when initially bringing up the extension
+//to make it instantly be in either the off or on position instead of sliding up or down when opening extension popup
+let slider = document.getElementsByClassName("slider");
+let sliderBallTransition = window
+  .getComputedStyle(document.querySelector(".slider"), ":before")
+  .getPropertyValue("transition");
+
 //checks chrome.storage.local for isOn to enable or disable extension in new session
 //so extension maintains whether it was on or off the last time the user used Chrome
 //so they don't have to turn it on again each time they open Chrome
@@ -9,9 +22,13 @@ function checkIfTurnedOn() {
   chrome.storage.local.get(["isOn"]).then((result) => {
     if (result.isOn) {
       checkbox.checked = true;
+      offLabel[0].style.color = "#a3a3a3";
+      onLabel[0].style.color = "#000";
       console.log(result);
     } else {
       checkbox.checked = false;
+      offLabel[0].style.color = "#000";
+      onLabel[0].style.color = "#a3a3a3";
       console.log(result);
     }
   });
@@ -27,6 +44,8 @@ function toggleOffOn() {
       chrome.storage.local.get(["isOn"]).then((result) => {
         console.log(result);
       });
+      offLabel[0].style.color = "#a3a3a3";
+      onLabel[0].style.color = "#000";
       console.log("is checked");
     });
   } else {
@@ -34,6 +53,8 @@ function toggleOffOn() {
       chrome.storage.local.get(["isOn"]).then((result) => {
         console.log(result);
       });
+      offLabel[0].style.color = "#000";
+      onLabel[0].style.color = "#a3a3a3";
       console.log("is not checked");
     });
   }

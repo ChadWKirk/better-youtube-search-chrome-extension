@@ -5,25 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="popup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
-  <body>
-    <div style="width: 240px; height: 56px; padding: 0; margin: 0">
-      <h1 style="font-size: 1rem; line-height: 1rem">Better YouTube Search</h1>
-      <hr style="line-height: 1rem" />
-      <label class="on-off-container" for="checkbox"
-        ><span
-          style="
-            cursor: pointer;
-            user-select: none;
-            font-size: 0.75rem;
-            line-height: 1rem;
-          "
-          >On/Off:</span
+  <body style="padding: 0; margin: 0">
+    <div id="container">
+      <div id="topbar">
+        Better <span style="color: #fff"> YouTube</span> Search
+      </div>
+      <div id="bottom-section-container">
+        <label class="off-label" for="checkbox"><span>Off</span></label
         ><label class="toggle-switch">
           <input type="checkbox" id="checkbox" />
-          <span class="slider"></span></label
-      ></label>
+          <span class="slider"></span>
+        </label>
+        <label class="on-label" for="checkbox"><span>On</span></label>
+      </div>
     </div>
     <script src="popup.js"></script>
   </body>
