@@ -17,6 +17,31 @@
   align-items: center;
   padding-left: 1rem;
   gap: 0.625rem;
+  position: relative;
+}
+#topbar img {
+  position: absolute;
+}
+#star {
+  width: 12px;
+  height: 12px;
+  bottom: 4px;
+  left: 2px;
+  transform: rotate(30deg);
+}
+#triangle {
+  width: 12px;
+  height: 12px;
+  left: 36%;
+  top: 4px;
+  transform: rotate(50deg);
+}
+#mag {
+  width: 24px;
+  height: 24px;
+  right: 32px;
+  bottom: 18px;
+  transform: rotate(45deg);
 }
 #bottom-section-container {
   height: 100%;
