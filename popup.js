@@ -18,7 +18,7 @@ let sliderBallTransition = window
 //checks chrome.storage.local for isOn to enable or disable extension in new session
 //so extension maintains whether it was on or off the last time the user used Chrome
 //so they don't have to turn it on again each time they open Chrome
-//also changes icon in toolbar from red to grey when extension is turned off and vice versa
+//also changes icon in toolbar and topbar background color from red to grey when extension is turned off and vice versa
 function checkIfTurnedOn() {
   chrome.storage.local.get(["isOn"]).then((result) => {
     if (result.isOn) {
@@ -28,6 +28,7 @@ function checkIfTurnedOn() {
       chrome.action.setIcon({
         path: "./images/better-youtube-search-icon-16.png",
       });
+      document.getElementById("topbar").style.backgroundColor = "#eb0000";
       console.log(result);
     } else {
       checkbox.checked = false;
@@ -36,6 +37,7 @@ function checkIfTurnedOn() {
       chrome.action.setIcon({
         path: "./images/better-youtube-search-icon-16-grey.png",
       });
+      document.getElementById("topbar").style.backgroundColor = "#e7e7e7";
       console.log(result);
     }
   });
@@ -45,7 +47,7 @@ checkIfTurnedOn();
 
 //turns extension on and off with toggle slider in popup html
 //so user can easily enable or disable the extension without having to go to their extensions tab to do so
-//also changes icon in toolbar from red to grey when extension is turned off and vice versa
+//also changes icon in toolbar and topbar background color from red to grey when extension is turned off and vice versa
 function toggleOffOn() {
   if (checkbox.checked) {
     chrome.storage.local.set({ isOn: true }).then((result) => {
@@ -57,6 +59,7 @@ function toggleOffOn() {
       chrome.action.setIcon({
         path: "./images/better-youtube-search-icon-16.png",
       });
+      document.getElementById("topbar").style.backgroundColor = "#eb0000";
       console.log("is checked");
     });
   } else {
@@ -69,6 +72,7 @@ function toggleOffOn() {
       chrome.action.setIcon({
         path: "./images/better-youtube-search-icon-16-grey.png",
       });
+      document.getElementById("topbar").style.backgroundColor = "#e7e7e7";
       console.log("is not checked");
     });
   }
