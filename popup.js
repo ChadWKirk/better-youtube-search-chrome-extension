@@ -18,17 +18,24 @@ let sliderBallTransition = window
 //checks chrome.storage.local for isOn to enable or disable extension in new session
 //so extension maintains whether it was on or off the last time the user used Chrome
 //so they don't have to turn it on again each time they open Chrome
+//also changes icon in toolbar from red to grey when extension is turned off and vice versa
 function checkIfTurnedOn() {
   chrome.storage.local.get(["isOn"]).then((result) => {
     if (result.isOn) {
       checkbox.checked = true;
       offLabel[0].style.color = "#a3a3a3";
       onLabel[0].style.color = "#000";
+      chrome.action.setIcon({
+        path: "./images/better-youtube-search-icon-16.png",
+      });
       console.log(result);
     } else {
       checkbox.checked = false;
       offLabel[0].style.color = "#000";
       onLabel[0].style.color = "#a3a3a3";
+      chrome.action.setIcon({
+        path: "./images/better-youtube-search-icon-16-grey.png",
+      });
       console.log(result);
     }
   });
@@ -38,6 +45,7 @@ checkIfTurnedOn();
 
 //turns extension on and off with toggle slider in popup html
 //so user can easily enable or disable the extension without having to go to their extensions tab to do so
+//also changes icon in toolbar from red to grey when extension is turned off and vice versa
 function toggleOffOn() {
   if (checkbox.checked) {
     chrome.storage.local.set({ isOn: true }).then((result) => {
@@ -46,6 +54,9 @@ function toggleOffOn() {
       });
       offLabel[0].style.color = "#a3a3a3";
       onLabel[0].style.color = "#000";
+      chrome.action.setIcon({
+        path: "./images/better-youtube-search-icon-16.png",
+      });
       console.log("is checked");
     });
   } else {
@@ -55,6 +66,9 @@ function toggleOffOn() {
       });
       offLabel[0].style.color = "#000";
       onLabel[0].style.color = "#a3a3a3";
+      chrome.action.setIcon({
+        path: "./images/better-youtube-search-icon-16-grey.png",
+      });
       console.log("is not checked");
     });
   }

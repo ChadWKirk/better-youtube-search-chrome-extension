@@ -9,7 +9,7 @@
   "permissions": ["tabs", "storage"],
   "action": { "default_popup": "popup.html" },
   "icons": {
-    "16": "images/better-youtube-search-icon-16.png",
+    "16": "images/better-youtube-search-icon-16-grey.png",
     "32": "images/better-youtube-search-icon-32.png",
     "48": "images/better-youtube-search-icon-48.png",
     "128": "images/better-youtube-search-icon-128.png"
