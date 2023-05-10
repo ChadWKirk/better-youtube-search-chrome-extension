@@ -1,3 +1,7 @@
+:root {
+  --transition: 0;
+}
+
 #container {
   width: 400px;
   height: 240px;
@@ -19,11 +23,11 @@
   padding-left: 1rem;
   gap: 0.625rem;
   position: relative;
-  transition: 0.2s;
+  /* transition: 0.2s; */
 }
 #topbar img {
   position: absolute;
-  transition: opacity 0.2s;
+  /* transition: opacity 0.2s; */
 }
 #star {
   width: 12px;
@@ -87,7 +91,7 @@
   justify-content: center;
   align-items: center;
   color: #000;
-  transition: color 0.2s;
+  /* transition: color 0.2s; */
 }
 .on-label {
   margin-left: 1.95rem;
@@ -99,7 +103,7 @@
   justify-content: center;
   align-items: center;
   color: #a3a3a3;
-  transition: color 0.2s;
+  /* transition: color 0.2s; */
 }
 .toggle-switch {
   position: relative;
@@ -118,8 +122,8 @@
   height: 2rem;
   width: 5rem;
   background-color: #ccc;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  /* -webkit-transition: 0.2s;
+  transition: 0.2s; */
 }
 .slider::before {
   position: absolute;
@@ -130,8 +134,7 @@
   bottom: -4px;
   background-color: #fff;
   border-radius: 50%;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  transition: var(--transition);
   box-shadow: 0 2px 2px 0px #0000005c;
 }
 input:checked + .slider {
