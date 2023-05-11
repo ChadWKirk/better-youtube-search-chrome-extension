@@ -37,9 +37,9 @@ function checkIfTurnedOn() {
       document.getElementById("star").style.opacity = "1";
       document.getElementById("triangle").style.opacity = "1";
       document.getElementById("mag").style.opacity = "1";
-      document.querySelectorAll("span")[0].style.color = "#282828";
-      document.querySelectorAll("span")[1].style.color = "#fff";
-      document.querySelectorAll("span")[2].style.color = "#282828";
+      document.getElementById("better-span").style.color = "#282828";
+      document.getElementById("youtube-span").style.color = "#fff";
+      document.getElementById("search-span").style.color = "#282828";
       console.log(result);
     } else {
       checkbox.checked = false;
@@ -53,9 +53,9 @@ function checkIfTurnedOn() {
       document.getElementById("star").style.opacity = "0";
       document.getElementById("triangle").style.opacity = "0";
       document.getElementById("mag").style.opacity = "0";
-      document.querySelectorAll("span")[0].style.color = "#828282";
-      document.querySelectorAll("span")[1].style.color = "#828282";
-      document.querySelectorAll("span")[2].style.color = "#828282";
+      document.getElementById("better-span").style.color = "#828282";
+      document.getElementById("youtube-span").style.color = "#828282";
+      document.getElementById("search-span").style.color = "#828282";
 
       console.log(result);
     }
@@ -80,9 +80,9 @@ function toggleOffOn() {
         path: "./images/better-youtube-search-icon-16.png",
       });
       document.getElementById("topbar").style.transition = "0.2s";
-      document.querySelectorAll("span")[0].style.transition = "0.2s";
-      document.querySelectorAll("span")[1].style.transition = "0.2s";
-      document.querySelectorAll("span")[2].style.transition = "0.2s";
+      document.getElementById("better-span").style.transition = "0.2s";
+      document.getElementById("youtube-span").style.transition = "0.2s";
+      document.getElementById("search-span").style.transition = "0.2s";
       document.getElementById("star").style.transition = "0.2s";
       document.getElementById("triangle").style.transition = "0.2s";
       document.getElementById("mag").style.transition = "0.2s";
@@ -91,9 +91,9 @@ function toggleOffOn() {
       document.querySelector(".slider").style.transition = "0.2s";
       document.documentElement.style.setProperty("--transition", "0.2s");
       document.getElementById("topbar").style.backgroundColor = "#eb0000";
-      document.querySelectorAll("span")[0].style.color = "#282828";
-      document.querySelectorAll("span")[1].style.color = "#fff";
-      document.querySelectorAll("span")[2].style.color = "#282828";
+      document.getElementById("better-span").style.color = "#282828";
+      document.getElementById("youtube-span").style.color = "#fff";
+      document.getElementById("search-span").style.color = "#282828";
       document.getElementById("star").style.opacity = "1";
       document.getElementById("triangle").style.opacity = "1";
       document.getElementById("mag").style.opacity = "1";
@@ -110,9 +110,9 @@ function toggleOffOn() {
         path: "./images/better-youtube-search-icon-16-grey.png",
       });
       document.getElementById("topbar").style.transition = "0.2s";
-      document.querySelectorAll("span")[0].style.transition = "0.2s";
-      document.querySelectorAll("span")[1].style.transition = "0.2s";
-      document.querySelectorAll("span")[2].style.transition = "0.2s";
+      document.getElementById("better-span").style.transition = "0.2s";
+      document.getElementById("youtube-span").style.transition = "0.2s";
+      document.getElementById("search-span").style.transition = "0.2s";
       document.getElementById("star").style.transition = "0.2s";
       document.getElementById("triangle").style.transition = "0.2s";
       document.getElementById("mag").style.transition = "0.2s";
@@ -124,9 +124,9 @@ function toggleOffOn() {
       document.getElementById("star").style.opacity = "0";
       document.getElementById("triangle").style.opacity = "0";
       document.getElementById("mag").style.opacity = "0";
-      document.querySelectorAll("span")[0].style.color = "#828282";
-      document.querySelectorAll("span")[1].style.color = "#828282";
-      document.querySelectorAll("span")[2].style.color = "#828282";
+      document.getElementById("better-span").style.color = "#828282";
+      document.getElementById("youtube-span").style.color = "#828282";
+      document.getElementById("search-span").style.color = "#828282";
       console.log("is not checked");
     });
   }

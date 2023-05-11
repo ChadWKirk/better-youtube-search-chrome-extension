@@ -14,8 +14,8 @@
     <title>Document</title>
   </head>
   <body style="padding: 0; margin: 0">
-    <div id="container">
-      <div id="topbar">
+    <main id="container">
+      <header id="topbar">
         <img id="star" src="images\better-youtube-search-star.svg" />
         <img id="triangle" src="images\better-youtube-search-triangle.svg" />
         <img id="mag" src="images\better-youtube-search-mag.svg" />
@@ -25,25 +25,34 @@
           src="images\better-youtube-search-triangle-grey.svg"
         />
         <img id="magGrey" src="images\better-youtube-search-mag-grey.svg" />
-        <span style="position: relative; z-index: 2; color: #282828"
-          >Better</span
-        >
-        <span style="position: relative; z-index: 2; color: #fff">
-          YouTube</span
-        >
-        <span style="position: relative; z-index: 2; color: #282828"
-          >Search</span
-        >
-      </div>
-      <div id="bottom-section-container">
+        <h1>
+          <span
+            id="better-span"
+            style="position: relative; z-index: 2; color: #282828"
+            >Better</span
+          >
+          <span
+            id="youtube-span"
+            style="position: relative; z-index: 2; color: #fff"
+          >
+            YouTube</span
+          >
+          <span
+            id="search-span"
+            style="position: relative; z-index: 2; color: #282828"
+            >Search</span
+          >
+        </h1>
+      </header>
+      <section id="bottom-section-container">
         <label class="off-label" for="checkbox"><span>Off</span></label
         ><label class="toggle-switch">
           <input type="checkbox" id="checkbox" />
           <span class="slider"></span>
         </label>
         <label class="on-label" for="checkbox"><span>On</span></label>
-      </div>
-    </div>
+      </section>
+    </main>
     <script src="popup.js"></script>
   </body>
 </html>
