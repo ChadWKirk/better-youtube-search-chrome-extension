@@ -24,6 +24,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
       if (request.message === "submit") {
         //timeout is just to make it change URL at a specific time to make it look more smooth for the user
         setTimeout(() => {
+          //using chrome.tabs.query to bring in the tabs API to have access to tab and tab.url
           chrome.tabs.query(
             { active: true, currentWindow: true },
             function (tab) {

@@ -11,9 +11,6 @@ let onLabel = document.getElementsByClassName("on-label");
 //to set their transition times to 0 when initially bringing up the extension
 //to make it instantly be in either the off or on position instead of sliding up or down when opening extension popup
 let slider = document.getElementsByClassName("slider");
-let sliderBallTransition = document.querySelector("::before");
-
-let universal = document.querySelectorAll("*");
 
 //checks chrome.storage.local for isOn to enable or disable extension in new session
 //so extension maintains whether it was on or off the last time the user used Chrome
@@ -24,7 +21,6 @@ function checkIfTurnedOn() {
   chrome.storage.local.get(["isOn"]).then((result) => {
     if (result.isOn) {
       checkbox.checked = true;
-      console.log(sliderBallTransition);
       offLabel[0].style.color = "#a3a3a3";
       onLabel[0].style.color = "#000";
       chrome.action.setIcon({
