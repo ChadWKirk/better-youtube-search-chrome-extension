@@ -1,16 +1,14 @@
 ---
-title: Background and Content
+title: Scripts
 layout: home
 nav_order: 3
 ---
 
-# Background and Content
-
-Background.js is a script that runs in the background.
-
-Content.js is a script that manipulates the DOM of the page it has access to from manifest.json matches
+# Scripts
 
 ## background.js
+
+Background.js is a script that runs in the background.
 
 There are two functions of this.
 
@@ -21,5 +19,7 @@ The second one **is a copy of the first one**, but runs when the user clicks the
 There is an edgecase of the user doing that but instead of clicking the search button, they hit enter in the search field. I haven't figured out how to capture that event yet. I have tried adding an eventlistener on the form for submit and keypress enter, but it doesn't work for some reason. If you're reading this, it means I still haven't figured it out. If you want to help, let me know! I'd be very curious of what you find!
 
 ## content.js
+
+Content.js is a script that manipulates the DOM of the page it has access to from manifest.json matches
 
 The comment in the content.js file explains it. It uses the chrome.runtime.sendMessage to send a message when the user clicks the search button on youtube, which is caught by background.js in it's second function (explained above).
