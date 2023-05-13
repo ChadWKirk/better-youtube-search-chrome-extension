@@ -36,6 +36,7 @@ function checkIfTurnedOn() {
       document.getElementById("better-span").style.color = "#282828";
       document.getElementById("youtube-span").style.color = "#fff";
       document.getElementById("search-span").style.color = "#282828";
+      document.getElementById("note-span").style.display = "block";
       console.log(result);
     } else {
       checkbox.checked = false;
@@ -52,6 +53,7 @@ function checkIfTurnedOn() {
       document.getElementById("better-span").style.color = "#828282";
       document.getElementById("youtube-span").style.color = "#828282";
       document.getElementById("search-span").style.color = "#828282";
+      document.getElementById("note-span").style.display = "none";
 
       console.log(result);
     }
@@ -93,6 +95,8 @@ function toggleOffOn() {
       document.getElementById("star").style.opacity = "1";
       document.getElementById("triangle").style.opacity = "1";
       document.getElementById("mag").style.opacity = "1";
+      document.getElementById("note-span").style.display = "block";
+
       console.log("is checked");
     });
   } else {
@@ -123,6 +127,8 @@ function toggleOffOn() {
       document.getElementById("better-span").style.color = "#828282";
       document.getElementById("youtube-span").style.color = "#828282";
       document.getElementById("search-span").style.color = "#828282";
+      document.getElementById("note-span").style.display = "none";
+
       console.log("is not checked");
     });
   }
