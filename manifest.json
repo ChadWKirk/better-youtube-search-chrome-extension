@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Better YouTube Search",
   "description": "Fix YouTube search results by showing all search results and stop Recommended videos from appearing in your search results.",
-  "version": "1.0",
+  "version": "2.0",
   "background": {
     "service_worker": "scripts/background.js"
   },
